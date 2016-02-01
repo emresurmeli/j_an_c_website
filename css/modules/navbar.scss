@@ -97,7 +97,7 @@
 
   .nav-link:first-child {
     @include media($horizontal-bar-mode) {
-      margin-left: $centered-navigation-item-nudge;
+      // margin-left: $centered-navigation-item-nudge;
     }
   }
 
@@ -141,12 +141,6 @@
     @include media($large-screen) {
       display: inline;
     }
-  }
-
-  .logo img {
-    margin-bottom: -$centered-navigation-logo-height / 3;
-    max-height: $centered-navigation-logo-height;
-    opacity: 0.6;
   }
 
 
