@@ -1,55 +1,56 @@
-.hero {
-  $base-border-radius: 3px !default;
-  $action-color: #477DCA !default;
-  $large-screen: em(860) !default;
-  $hero-background-top: #7F99BE;
-  $hero-background-bottom: #20392B;
-  $hero-color: white;
-  $gradient-angle: 10deg;
-  $hero-image: '';
+.image-gradient-dynamic {
+  $image-gradient-color-top: red;
+  $transparency-top: 0.9;
+  $image-gradient-color-bottom: green;
+  $transparency-bottom: 0.6;
+  $vertical-angle: 0deg;
+  $image-gradient-color-left: teal;
+  $transparency-left: 0.8;
+  $image-gradient-color-right: yellow;
+  $transparency-right: 0.8;
+  $horizontal-angle: 90deg;
 
-  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
-  background-color: #324766;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 3em;
+  line-height: 0;
+  position: relative;
+  width: 100%;
 
-  .hero-logo img {
-    height: 4em;
-    margin-bottom: 1em;
+  img {
+   height: auto;
+   left: 0;
+   position: relative;
+   top: 0;
+   width: 100%;
   }
 
-  .hero-inner {
-    @include outer-container;
-    @include clearfix;
+  .copy {
+    @include transform(translate(-50%, -50%));
+    left: 50%;
     margin: auto;
-    padding: 3.5em;
+    position: absolute;
     text-align: center;
+    top: 50%;
+    z-index: 999;
 
-    .hero-copy {
-      text-align: center;
+    p {
+      color: white;
+      line-height: 1.5em;
+      padding: 1em 2em;
+      position: relative;
+    }
+  }
 
-      h1 {
-        color: $hero-color;
-        font-size: 1.6em;
-        margin-bottom: 0.5em;
+  .overlay {
+    @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top),
+      transparentize($image-gradient-color-bottom, $transparency-bottom));
+    display: block;
+    @include position(absolute, 0px 0px 0px 0px);
 
-        @include media($large-screen) {
-          font-size: 1.8em;
-        }
-      }
-
-      p {
-        color: $hero-color;
-        line-height: 1.4em;
-        margin: 0 auto 3em auto;
-
-        @include media($large-screen) {
-          font-size: 1.1em;
-          max-width: 40%;
-        }
-      }
+    &:after {
+      @include linear-gradient($horizontal-angle, transparentize($image-gradient-color-left, $transparency-left),
+        transparentize($image-gradient-color-right, $transparency-right));
+      @include position(absolute, 0px 0px 0px 0px);
+      content: '';
+      display: block;
     }
   }
 }
