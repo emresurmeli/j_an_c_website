@@ -511,7 +511,7 @@ picture {
     text-align: center;
     top: 50%;
     z-index: 999; }
-    .image-gradient-dynamic .copy p {
+    .image-gradient-dynamic .copy h1 {
       color: white;
       line-height: 1.5em;
       padding: 1em 2em;

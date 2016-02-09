@@ -12,8 +12,8 @@ $(document).ready(function() {
   });
 
   var bittersMap = (function () {
-    var myLatlng = new google.maps.LatLng(40.728333, -73.994167),
-        mapCenter = new google.maps.LatLng(40.728333, -73.994167),
+    var myLatlng = new google.maps.LatLng(41.663407, -73.964074),
+        mapCenter = new google.maps.LatLng(41.663407, -73.964074),
         mapCanvas = document.getElementById('map_canvas'),
         mapOptions = {
           center: mapCenter,
