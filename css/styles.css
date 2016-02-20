@@ -341,7 +341,7 @@ picture {
 #rsvp-button {
   background-color: #cccc00; }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1080px) {
   #rsvp-image {
     height: 736px; }
 
