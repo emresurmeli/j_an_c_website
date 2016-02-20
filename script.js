@@ -1,19 +1,19 @@
 $(document).ready(function() {
 
-  if ($("#js-parallax-window").length) {
+  if ($("#js-parallax-window-two").length) {
     parallax();
   }
 
   $(window).scroll(function(e) {
-    if ($("#js-parallax-window").length) {
+    if ($(".parallax-window").length) {
       parallax();
     }
   });
 
   function parallax(){
-    if( $("#js-parallax-window").length > 0 ) {
-      var plxBackground = $("#js-parallax-background");
-      var plxWindow = $("#js-parallax-window");
+    if( $(".parallax-window").length > 0 ) {
+      var plxBackground = $(".parallax-background");
+      var plxWindow = $(".parallax-window");
 
       var plxWindowTopToPageTop = $(plxWindow).offset().top;
       var windowTopToPageTop = $(window).scrollTop();
@@ -48,7 +48,7 @@ $(document).ready(function() {
         mapOptions = {
           center: mapCenter,
           zoom: 13,
-          scrollwheel: false,
+          scrollwheel: true,
           draggable: true,
           disableDefaultUI: true,
           mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -58,7 +58,7 @@ $(document).ready(function() {
           '<div id="content">'+
           '<div id="siteNotice">'+
           '</div>'+
-          '<h1 id="firstHeading" class="firstHeading">thoughtbot</h1>'+
+          '<h1 id="firstHeading" class="firstHeading">Buttermilk Farms</h1>'+
           '<div id="bodyContent"'+
           '<p>Sveavägen 98</p>'+
           '</div>'+
@@ -70,7 +70,7 @@ $(document).ready(function() {
         marker = new google.maps.Marker({
           position: myLatlng,
           map: map,
-          title: 'thoughtbot (Sweden)'
+          title: 'Buttermilk Farms'
         });
 
     return {
