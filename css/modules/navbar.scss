@@ -5,7 +5,7 @@
   $base-font-color: $dark-gray !default;
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: #E7F1EC;
+  $centered-navigation-background: #e6e600;
   $centered-navigation-color: transparentize($base-font-color, 0.3);
   $centered-navigation-color-hover: $base-font-color;
   $centered-navigation-height: 60px;
@@ -23,6 +23,9 @@
 
 
 // Mobile view
+  .nav-options {
+    float: right;
+  }
 
   .mobile-logo {
     display: inline;
@@ -112,7 +115,7 @@
     z-index: 9999;
 
     a {
-      color: $centered-navigation-color;
+      color: #ffffff;
       display: inline-block;
       outline: none;
       text-decoration: none;
@@ -148,6 +151,7 @@
 
   li.more.nav-link {
     padding-right: 0;
+    float: right;
 
     @include media($large-screen) {
       padding-right: $centered-navigation-submenu-padding;

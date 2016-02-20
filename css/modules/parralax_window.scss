@@ -1,4 +1,4 @@
-$parallax-window-height: 30em;
+$parallax-window-height: 50em;
 $parallax-background-height: $parallax-window-height * 2;
 
 .parallax-window {
@@ -17,8 +17,20 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 .parallax-background {
-  background: url("https://raw.githubusercontent.com/emresurmeli/jandc/master/pictures/IMG_9492.JPG") no-repeat;
-  background-position: center;
+  background: url("https://raw.githubusercontent.com/emresurmeli/jandc/gh-pages/pictures/IMG_9492.JPG") no-repeat;
+  background-position: -100px -550px;
+  background-size: cover;
+  background-color: beige;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 3;
+  width: 100%;
+}
+
+.parallax-background-2 {
+  background: url("https://raw.githubusercontent.com/emresurmeli/jandc/gh-pages/pictures/IMG_9492.JPG") no-repeat;
+  background-position: -100px -550px;
   background-size: cover;
   background-color: beige;
   height: $parallax-background-height;
