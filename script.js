@@ -60,7 +60,7 @@ $(document).ready(function() {
           '</div>'+
           '<h1 id="firstHeading" class="firstHeading">Buttermilk Farms</h1>'+
           '<div id="bodyContent"'+
-          '<p>Sveavägen 98</p>'+
+          '<p>220 North Road, Milton, New York, NY 12547</p>'+
           '</div>'+
           '</div>',
         infowindow = new google.maps.InfoWindow({
