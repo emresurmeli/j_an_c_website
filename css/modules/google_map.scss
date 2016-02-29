@@ -1,13 +1,11 @@
 #map_canvas {
   height: 300px;
-  width: 33%;
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
-  max-width: 100%;
   margin: .5em;
 }
 

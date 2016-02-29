@@ -42,35 +42,54 @@ $(document).ready(function() {
   });
 
   var bittersMap = (function () {
-    var myLatlng = new google.maps.LatLng(41.663407, -73.964074),
+    var butterMilkCord = new google.maps.LatLng(41.663407, -73.964074),
+        holidayInnCord = new google.maps.LatLng(41.677393, -73.927240),
         mapCenter = new google.maps.LatLng(41.663407, -73.964074),
         mapCanvas = document.getElementById('map_canvas'),
         mapOptions = {
           center: mapCenter,
-          zoom: 13,
+          zoom: 12,
           scrollwheel: true,
           draggable: true,
-          disableDefaultUI: true,
+          disableDefaultUI: false,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         },
         map = new google.maps.Map(mapCanvas, mapOptions),
-        contentString =
+        holidayInnContent =
+          '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">Holiday Inn Express, Poughkeepsie</h1>'+
+          '<div id="bodyContent"'+
+          '<p>220 2750 South Rd</br> Poughkeepsie, NY 12601</p>'+
+          '</div>'+
+          '</div>',
+        holidayInnInfo = new google.maps.InfoWindow({
+          content: holidayInnContent,
+          maxWidth: 300
+        }),
+        butterMilkContent =
           '<div id="content">'+
           '<div id="siteNotice">'+
           '</div>'+
           '<h1 id="firstHeading" class="firstHeading">Buttermilk Farms</h1>'+
           '<div id="bodyContent"'+
-          '<p>220 North Road, Milton, New York, NY 12547</p>'+
+          '<p>220 North Road, Milton</br> New York, NY 12547</p>'+
           '</div>'+
           '</div>',
-        infowindow = new google.maps.InfoWindow({
-          content: contentString,
+        butterMilkInfo = new google.maps.InfoWindow({
+          content: butterMilkContent,
           maxWidth: 300
         }),
-        marker = new google.maps.Marker({
-          position: myLatlng,
+        butterMilk = new google.maps.Marker({
+          position: butterMilkCord,
           map: map,
           title: 'Buttermilk Farms'
+        });
+        holidayInn = new google.maps.Marker({
+          position: holidayInnCord,
+          map: map,
+          title: 'Holiday Inn Express, Poughkeepsie'
         });
 
     return {
@@ -85,8 +104,13 @@ $(document).ready(function() {
           ]}
         ]);
 
-        google.maps.event.addListener(marker, 'click', function () {
-          infowindow.open(map,marker);
+        google.maps.event.addListener(butterMilk, 'click', function () {
+          holidayInnInfo.close(map, holidayInn);
+          butterMilkInfo.open(map, butterMilk);
+        });
+        google.maps.event.addListener(holidayInn, 'click', function () {
+          butterMilkInfo.close(map, butterMilk);
+          holidayInnInfo.open(map, holidayInn);
         });
       }
     };
