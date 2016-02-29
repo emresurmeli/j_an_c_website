@@ -44,7 +44,7 @@ $(document).ready(function() {
   var bittersMap = (function () {
     var butterMilkCord = new google.maps.LatLng(41.663407, -73.964074),
         holidayInnCord = new google.maps.LatLng(41.677393, -73.927240),
-        mapCenter = new google.maps.LatLng(41.663407, -73.964074),
+        mapCenter = new google.maps.LatLng(41.67000, -73.94000),
         mapCanvas = document.getElementById('map_canvas'),
         mapOptions = {
           center: mapCenter,

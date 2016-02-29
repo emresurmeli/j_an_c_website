@@ -349,7 +349,13 @@ picture {
 
 @font-face {
   font-family: 'roboto-medium';
-  src: url("../../fonts/roboto/Roboto-Medium.ttf"); }
+  src: url("../../fonts/roboto/Roboto-LightItalic.ttf"); }
+@font-face {
+  font-family: 'stamped-evelope';
+  src: url("../../fonts/StampedEnvelopes.ttf"); }
+body h1 {
+  font-family: 'stamped-evelope'; }
+
 .centered-navigation {
   background-color: #e6e600;
   border-bottom: 1px solid #c7c700;
@@ -552,6 +558,23 @@ picture {
   font-size: 1em;
   margin: 0; }
 
+.location-details .location-details-map {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+  margin: .5em; }
+
+@media only screen and (min-width: 50em) {
+  .location-details .location-details-map {
+    -webkit-flex-basis: 45%;
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 45%;
+    max-width: 45%;
+    margin: 1em; } }
 .parallax-window {
   max-height: 50em;
   overflow: hidden;
@@ -790,7 +813,7 @@ section {
 .about-us-container .about-us-item {
   margin: .75em;
   -webkit-flex-basis: 40%;
-  -ms-flex-preferred-size: 40%;
+  -ms-flex-preferred-size: 50%;
   flex-basis: 40%;
   max-width: 35%; }
 
@@ -799,12 +822,8 @@ section {
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
-    max-width: 20%; } }
+    max-width: 25%; } }
 .about-us-container .about-us-item img {
   max-width: 100%; }
-
-img {
-  padding: 1px;
-  border: 1px solid #021a40; }
 
 /*# sourceMappingURL=styles.css.map */

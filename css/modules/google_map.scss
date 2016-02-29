@@ -29,3 +29,24 @@
   font-size: 1em;
   margin: 0;
 }
+
+.location-details .location-details-map {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+  margin: .5em;
+}
+
+@media only screen and (min-width: 50em) {
+  .location-details .location-details-map {
+    -webkit-flex-basis: 45%;
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 45%;
+    max-width: 45%;
+    margin: 1em;
+  }
+}

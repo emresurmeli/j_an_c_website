@@ -1,4 +1,13 @@
 @font-face {
   font-family: 'roboto-medium';
-  src: url('../../fonts/roboto/Roboto-Medium.ttf');
+  src: url('../../fonts/roboto/Roboto-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'stamped-evelope';
+  src: url('../../fonts/StampedEnvelopes.ttf');
+}
+
+body h1 {
+  font-family: 'stamped-evelope';
 }
