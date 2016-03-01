@@ -5,7 +5,7 @@
   $base-font-color: $dark-gray !default;
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: #e6e600;
+  $centered-navigation-background: #459D45;
   $centered-navigation-color: transparentize($base-font-color, 0.3);
   $centered-navigation-color-hover: $base-font-color;
   $centered-navigation-height: 60px;
@@ -104,8 +104,8 @@
     }
   }
 
-  ul li.facebook {
-    display: none;
+  .facebook img {
+    margin: 0px 0px -7px 0px;
   }
 
   ul li.nav-link {

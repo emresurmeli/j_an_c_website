@@ -356,8 +356,8 @@ picture {
   font-weight: normal;
   font-style: normal; }
 .centered-navigation {
-  background-color: #e6e600;
-  border-bottom: 1px solid #c7c700;
+  background-color: #459D45;
+  border-bottom: 1px solid #3c883c;
   min-height: 60px;
   width: 100%;
   z-index: 9999; }
@@ -418,10 +418,10 @@ picture {
       .centered-navigation ul.centered-navigation-menu {
         display: block;
         text-align: center; } }
-  .centered-navigation ul li.facebook {
-    display: none; }
+  .centered-navigation .facebook img {
+    margin: 0px 0px -7px 0px; }
   .centered-navigation ul li.nav-link {
-    background: #e6e600;
+    background: #459D45;
     display: block;
     line-height: 60px;
     overflow: hidden;
@@ -517,14 +517,14 @@ picture {
             border-bottom-right-radius: 3px;
             padding-bottom: .7em; } }
       .centered-navigation ul.submenu li a {
-        background-color: #d7d700;
+        background-color: #409240;
         display: inline-block;
         text-align: right;
         text-decoration: none;
         width: 100%; }
         @media screen and (min-width: 53.75em) {
           .centered-navigation ul.submenu li a {
-            background-color: #e6e600;
+            background-color: #459D45;
             padding-left: 1em;
             text-align: left;
             width: 12em; } }
@@ -835,6 +835,10 @@ section {
   width: 100%;
   /* for IE 6 */ }
   .about-us-item h2 {
+    text-shadow: 0 0 2px black;
+    -moz-text-shadow: 0 0 2px black;
+    -webkit-text-shadow: 0 0 2px black;
+    transition: opacity 0.5s ease;
     opacity: 0;
     color: white;
     position: absolute;

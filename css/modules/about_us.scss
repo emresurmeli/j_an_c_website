@@ -66,13 +66,17 @@
   position: relative;
   width: 100%; /* for IE 6 */
   h2 {
-   opacity: 0;
-   color: white;
-   position: absolute;
-   margin: 0 0 0 2em;
-   bottom: 1em;
-   left: 0;
-   width: 100%;
+    text-shadow: 0 0 2px black;
+    -moz-text-shadow: 0 0 2px black;
+    -webkit-text-shadow: 0 0 2px black;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    color: white;
+    position: absolute;
+    margin: 0 0 0 2em;
+    bottom: 1em;
+    left: 0;
+    width: 100%;
   }
 }
 
