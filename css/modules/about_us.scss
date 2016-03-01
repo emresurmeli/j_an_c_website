@@ -51,8 +51,33 @@
     flex-basis: 25%;
     max-width: 25%;
   }
+  .about-us-item {
+    h2 {
+      opacity: 1;
+    }
+  }
 }
 
 .about-us-container .about-us-item img {
   max-width: 100%;
+}
+
+.about-us-item {
+  position: relative;
+  width: 100%; /* for IE 6 */
+  h2 {
+   opacity: 0;
+   color: white;
+   position: absolute;
+   margin: 0 0 0 2em;
+   bottom: 1em;
+   left: 0;
+   width: 100%;
+  }
+}
+
+.about-us-item:hover {
+  h2 {
+    opacity: 1;
+  }
 }

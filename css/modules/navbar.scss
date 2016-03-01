@@ -104,6 +104,10 @@
     }
   }
 
+  ul li.facebook {
+    display: none;
+  }
+
   ul li.nav-link {
     background: $centered-navigation-background;
     display: block;

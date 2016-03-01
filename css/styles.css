@@ -351,11 +351,10 @@ picture {
   font-family: 'roboto-medium';
   src: url("../../fonts/roboto/Roboto-LightItalic.ttf"); }
 @font-face {
-  font-family: 'stamped-evelope';
-  src: url("../../fonts/StampedEnvelopes.ttf"); }
-body h1 {
-  font-family: 'stamped-evelope'; }
-
+  font-family: 'stamped-envelope';
+  src: url("../fonts/StampedEnvelopes.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 .centered-navigation {
   background-color: #e6e600;
   border-bottom: 1px solid #c7c700;
@@ -419,6 +418,8 @@ body h1 {
       .centered-navigation ul.centered-navigation-menu {
         display: block;
         text-align: center; } }
+  .centered-navigation ul li.facebook {
+    display: none; }
   .centered-navigation ul li.nav-link {
     background: #e6e600;
     display: block;
@@ -822,8 +823,27 @@ section {
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
-    max-width: 25%; } }
+    max-width: 25%; }
+
+  .about-us-item h2 {
+    opacity: 1; } }
 .about-us-container .about-us-item img {
   max-width: 100%; }
+
+.about-us-item {
+  position: relative;
+  width: 100%;
+  /* for IE 6 */ }
+  .about-us-item h2 {
+    opacity: 0;
+    color: white;
+    position: absolute;
+    margin: 0 0 0 2em;
+    bottom: 1em;
+    left: 0;
+    width: 100%; }
+
+.about-us-item:hover h2 {
+  opacity: 1; }
 
 /*# sourceMappingURL=styles.css.map */

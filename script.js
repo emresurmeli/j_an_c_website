@@ -4,6 +4,8 @@ $(document).ready(function() {
     parallax();
   }
 
+  $("h1").lettering();
+
   $(window).scroll(function(e) {
     if ($(".parallax-window").length) {
       parallax();
@@ -62,6 +64,7 @@ $(document).ready(function() {
           '<h1 id="firstHeading" class="firstHeading">Holiday Inn Express, Poughkeepsie</h1>'+
           '<div id="bodyContent"'+
           '<p>220 2750 South Rd</br> Poughkeepsie, NY 12601</p>'+
+          '<a href="tel:+1 845 4731151">+1 845 4731151</a>'+
           '</div>'+
           '</div>',
         holidayInnInfo = new google.maps.InfoWindow({
@@ -75,6 +78,7 @@ $(document).ready(function() {
           '<h1 id="firstHeading" class="firstHeading">Buttermilk Farms</h1>'+
           '<div id="bodyContent"'+
           '<p>220 North Road, Milton</br> New York, NY 12547</p>'+
+          '<a href="tel:+1 845 7951310">+1 845 7951310</a>'+
           '</div>'+
           '</div>',
         butterMilkInfo = new google.maps.InfoWindow({

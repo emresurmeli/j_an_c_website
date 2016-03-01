@@ -4,10 +4,12 @@
 }
 
 @font-face {
-  font-family: 'stamped-evelope';
-  src: url('../../fonts/StampedEnvelopes.ttf');
+  font-family: 'stamped-envelope';
+  src: url('../fonts/StampedEnvelopes.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-body h1 {
-  font-family: 'stamped-evelope';
-}
+// body h1 {
+//   font-family: 'stamped-envelope';
+// }
