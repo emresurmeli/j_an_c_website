@@ -622,7 +622,10 @@ section {
   section h1 {
     font-size: 35px; }
   section h2 {
-    font-size: 25px; } }
+    font-size: 25px; }
+
+  .about-us-item h2 {
+    font-size: 12px; } }
 .location {
   display: -webkit-box;
   display: -moz-box;
