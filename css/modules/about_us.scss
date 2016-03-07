@@ -41,15 +41,21 @@
   -webkit-flex-basis: 40%;
   -ms-flex-preferred-size: 50%;
   flex-basis: 40%;
-  max-width: 35%;
+  max-width: 80%;
+}
+
+@media only screen and (max-width: 50em) {
+  .about-us-container {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 50em) {
   .about-us-container .about-us-item {
-    -webkit-flex-basis: 25%;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%;
+    -webkit-flex-basis: 30%;
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+    max-width: 30%;
   }
   .about-us-item {
     h2 {

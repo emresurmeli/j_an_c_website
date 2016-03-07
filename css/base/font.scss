@@ -1,15 +1,35 @@
 @font-face {
   font-family: 'roboto-medium';
-  src: url('../../fonts/roboto/Roboto-LightItalic.ttf');
-}
-
-@font-face {
-  font-family: 'stamped-envelope';
-  src: url('../fonts/StampedEnvelopes.ttf') format('truetype');
+  src: url('../fonts_and_logos/roboto/Roboto-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-// body h1 {
-//   font-family: 'stamped-envelope';
-// }
+@font-face {
+  font-family: 'stamped-envelope';
+  src: url('../fonts_and_logos/StampedEnvelopes.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cursive';
+  src: url('../fonts_and_logos/great-vibes/GreatVibes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'regular';
+  src: url('../fonts_and_logos/help_us_giambattist/HelpUsGiambattista.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#info-text h2 {
+  font-family: 'cursive';
+}
+
+body h1, h2:not(.about-us-item h2) {
+  font-family: 'regular'
+}

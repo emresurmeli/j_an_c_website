@@ -349,12 +349,30 @@ picture {
 
 @font-face {
   font-family: 'roboto-medium';
-  src: url("../../fonts/roboto/Roboto-LightItalic.ttf"); }
-@font-face {
-  font-family: 'stamped-envelope';
-  src: url("../fonts/StampedEnvelopes.ttf") format("truetype");
+  src: url("../fonts_and_logos/roboto/Roboto-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'stamped-envelope';
+  src: url("../fonts_and_logos/StampedEnvelopes.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'cursive';
+  src: url("../fonts_and_logos/great-vibes/GreatVibes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'regular';
+  src: url("../fonts_and_logos/help_us_giambattist/HelpUsGiambattista.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+#info-text h2 {
+  font-family: 'cursive'; }
+
+body h1, h2:not(.about-us-item h2) {
+  font-family: "regular"; }
+
 .centered-navigation {
   background-color: #459D45;
   border-bottom: 1px solid #3c883c;
@@ -376,7 +394,7 @@ picture {
       .centered-navigation .mobile-logo {
         display: none; } }
   .centered-navigation .centered-navigation-mobile-menu {
-    color: rgba(51, 51, 51, 0.7);
+    color: #ffffff;
     display: block;
     float: right;
     line-height: 60px;
@@ -531,7 +549,16 @@ picture {
 
 .main-picture img {
   max-width: 100%;
-  max-height: 200em; }
+  max-height: 200em;
+  box-shadow: 0px 0px 10px 0px; }
+
+.location-picture img {
+  max-width: 100%;
+  max-height: 200em;
+  box-shadow: 0px 0px 10px 0px; }
+
+figure img {
+  box-shadow: 0px 0px 10px 0px; }
 
 #map_canvas {
   height: 300px;
@@ -576,41 +603,6 @@ picture {
     flex-basis: 45%;
     max-width: 45%;
     margin: 1em; } }
-.parallax-window {
-  max-height: 50em;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  width: 100%; }
-
-.parallax-static-content {
-  color: #9A9A8A;
-  padding: 8em 0;
-  position: relative;
-  z-index: 9; }
-
-.parallax-background {
-  background: url("https://raw.githubusercontent.com/emresurmeli/jandc/gh-pages/pictures/IMG_9492.JPG") no-repeat;
-  background-position: -100px -550px;
-  background-size: cover;
-  background-color: beige;
-  height: 100em;
-  left: 0;
-  position: absolute;
-  top: -16.66667em;
-  width: 100%; }
-
-.parallax-background-2 {
-  background: url("https://raw.githubusercontent.com/emresurmeli/jandc/gh-pages/pictures/IMG_9494.JPG") no-repeat;
-  background-position: -100px -450px;
-  background-size: cover;
-  background-color: beige;
-  height: 100em;
-  left: 0;
-  position: absolute;
-  top: -16.66667em;
-  width: 100%; }
-
 section {
   display: flex;
   align-items: center;
@@ -626,6 +618,11 @@ section {
   opacity: 0.9;
   height: 2em; }
 
+@media only screen and (max-width: 50em) {
+  section h1 {
+    font-size: 35px; }
+  section h2 {
+    font-size: 25px; } }
 .location {
   display: -webkit-box;
   display: -moz-box;
@@ -816,14 +813,17 @@ section {
   -webkit-flex-basis: 40%;
   -ms-flex-preferred-size: 50%;
   flex-basis: 40%;
-  max-width: 35%; }
+  max-width: 80%; }
 
+@media only screen and (max-width: 50em) {
+  .about-us-container {
+    flex-direction: column; } }
 @media only screen and (min-width: 50em) {
   .about-us-container .about-us-item {
-    -webkit-flex-basis: 25%;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%; }
+    -webkit-flex-basis: 30%;
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+    max-width: 30%; }
 
   .about-us-item h2 {
     opacity: 1; } }

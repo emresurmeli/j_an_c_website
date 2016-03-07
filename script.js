@@ -1,36 +1,6 @@
 $(document).ready(function() {
 
-  if ($("#js-parallax-window-two").length) {
-    parallax();
-  }
-
-  $("h1").lettering();
-
-  $(window).scroll(function(e) {
-    if ($(".parallax-window").length) {
-      parallax();
-    }
-  });
-
-  function parallax(){
-    if( $(".parallax-window").length > 0 ) {
-      var plxBackground = $(".parallax-background");
-      var plxWindow = $(".parallax-window");
-
-      var plxWindowTopToPageTop = $(plxWindow).offset().top;
-      var windowTopToPageTop = $(window).scrollTop();
-      var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
-
-      var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
-      var windowInnerHeight = window.innerHeight;
-      var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
-      var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
-      var plxSpeed = 0.35;
-
-      plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
-    }
-  }
-
+  // Navbar
   var menuToggle = $('#js-centered-navigation-mobile-menu').unbind();
   $('#js-centered-navigation-menu').removeClass("show");
 
@@ -43,6 +13,21 @@ $(document).ready(function() {
     });
   });
 
+  // Smooth scrolling
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+
+  // Google maps
   var bittersMap = (function () {
     var butterMilkCord = new google.maps.LatLng(41.663407, -73.964074),
         holidayInnCord = new google.maps.LatLng(41.677393, -73.927240),

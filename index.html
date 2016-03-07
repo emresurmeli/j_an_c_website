@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>J&C Wedding</title>
-    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
     <header class="centered-navigation" role="banner">
@@ -15,16 +16,17 @@
             <li class="nav-link"><a data-scroll href="#location">Location</a></li>
             <li class="nav-link"><a data-scroll href="#program">Program</a></li>
             <li class="nav-link"><a data-scroll href="#activities">Activites</a></li>
-<!--             <li class="nav-link"><a data-scroll href="#transportation">Transportation</a></li>
- -->        <li class="nav-link"><a href="javascript:void(0)" onclick="window.open ('http://goo.gl/forms/ERgTm2IwZj', ''); return false">RSVP</a></li>
-            <li class="nav-link facebook"><a href="javascript:void(0)" onclick="window.open ('https://www.facebook.com/events/1667187873531725/', ''); return false"><img src="fonts_and_logos/FB-f-Logo__white_50.png" height="29" width="29"></a></li>
+            <li class="nav-link"><a href="javascript:void(0)" onclick="window.open ('https://docs.google.com/document/d/1jSyIaGMVG7_0RT5sT6m8F_YCTms3gnNERo7qFZLu598/edit', ''); return false">Accommodation</a></li>
+            <li class="nav-link"><a data-scroll href="#transportation">Transportation</a></li>
+            <li class="nav-link"><a href="javascript:void(0)" onclick="window.open ('http://goo.gl/forms/ERgTm2IwZj', ''); return false">RSVP</a></li>
+            <li class="nav-link facebook"><a href="javascript:void(0)" onclick="window.open ('https://www.facebook.com/events/1667187873531725/', ''); return false"><img class="facebook" src="fonts_and_logos/FB-f-Logo__white_50.png" height="29" width="29"></a></li>
           </ul>
         </nav>
       </div>
     </header>
     <section class="welcome-message">
       <article id="info-text">
-        <h1>Jeanne & Cuneyt</h1>
+        <h1>Jeanne and Cüneyt</h1>
         <h2>June 11 2016</h2>
       </article>
     </section>
@@ -37,8 +39,24 @@
       <h1>Program</h1>
       <p>
         We are planning to checkin to Buttermilk Falls Inn on <strong>Friday</strong>, and check out on <strong>Sunday</strong>. We will probably plan on doing some informal activities in the area and post more information here, and would love for you to join us. The ceremony will start at <strong>5pm</strong> on <strong>Saturday June 11</strong>, at Buttermilk Falls Inn, followed by cocktail hour and reception.</br>
-        </br>
-        <strong>More information coming soon!</strong>
+        <!-- <div>
+          <p>Friday, June 10</p>
+          <h4>Jeanne and Cüneyt will checkin to Buttermilk Falls Inn</h4>
+        </div>
+        <div>
+          <p>Saturday, June 11</p>
+          <h4>
+            Morning - Yoga by the river (details to be announced)
+            3:45 pm - Bus leaves Holiday Inn to Buttermilk Falls (15 mins drive)
+            5:00 pm - Ceremony at Buttermilk Falls Inn
+            6:00 pm - Cocktail hour and reception
+            12:00 am - Bus leaves Buttermilk Falls to Holiday Inn
+          </h4>
+        </div>
+        <div>
+          <p>Sunday, June 12</p>
+          <h4>We are planning to organize an early afternoon hike at a nearby location</h4>
+        </div> -->
       </p>
     </section>
     <section class="activities" id="activities">
@@ -65,11 +83,13 @@
     </section> -->
     <section class="location" id="location">
       <h1>Location</h1>
-      <section>
-        <div class="location-picture">
-          <img src="./pictures/IMG_9494 copy.JPG">
-        </div>
-      </section>
+    </section>
+    <section>
+      <div class="location-picture">
+        <img src="./pictures/IMG_9494 copy.JPG">
+      </div>
+    </section>
+    <section class="location" id="location">
       <div class="location-details">
         <h2><a href="javascript:void(0)" onclick="window.open ('http://www.buttermilkfallsinn.com/inn/your-stay.htm', ''); return false">Buttermilk Falls Inn</a></h2>
         <p>Buttermilk requires a two night minimum. If you would like to reserve a room at Buttermilk Falls, please first check the <a href="javascript:void(0)" onclick="window.open ('http://www.buttermilkfallsinn.com/rooms.htm', ''); return false">list of available rooms</a>, and then let us know which room you want and we will coordinate.</p>
@@ -81,7 +101,6 @@
       <div id="map_canvas" class="location-details-map"></div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
