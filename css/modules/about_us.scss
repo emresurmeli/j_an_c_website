@@ -46,11 +46,13 @@
 
 @media only screen and (max-width: 50em) {
   .about-us-container {
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
+    // -moz-box-direction: column;
+    // -webkit-box-direction: column;
+    // -webkit-box-orient: vertical;
+    // -webkit-flex-direction: column;
+    // -ms-flexbox-direction: column;
+    // -ms-flex-direction: column;
+    // flex-direction: column;
   }
 }
 

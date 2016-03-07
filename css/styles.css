@@ -815,13 +815,6 @@ section {
   flex-basis: 40%;
   max-width: 80%; }
 
-@media only screen and (max-width: 50em) {
-  .about-us-container {
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column; } }
 @media only screen and (min-width: 50em) {
   .about-us-container .about-us-item {
     -webkit-flex-basis: 30%;
