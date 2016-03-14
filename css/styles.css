@@ -379,9 +379,6 @@ body h1, h2:not(.about-us-item h2) {
   min-height: 60px;
   width: 100%;
   z-index: 9999; }
-  .centered-navigation.fixed {
-    position: fixed;
-    top: 0; }
   .centered-navigation .nav-options {
     float: right; }
   .centered-navigation .mobile-logo {

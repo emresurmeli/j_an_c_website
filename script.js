@@ -13,14 +13,14 @@ $(document).ready(function() {
     });
   });
 
-  $(window).bind('scroll', function() {
-    if ($(window).scrollTop() > 10) {
-      $('.centered-navigation').addClass('fixed');
-    }
-    else {
-      $('.centered-navigation').removeClass('fixed');
-    }
-  });
+  // $(window).bind('scroll', function() {
+  //   if ($(window).scrollTop() > 10) {
+  //     $('.centered-navigation').addClass('fixed');
+  //   }
+  //   else {
+  //     $('.centered-navigation').removeClass('fixed');
+  //   }
+  // });
 
   // Smooth scrolling
   $('a[href*="#"]:not([href="#"])').click(function() {
