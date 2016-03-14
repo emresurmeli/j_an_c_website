@@ -26,10 +26,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'actual';
+  src: url('../fonts_and_logos/font/fontello.ttf') format('truetype');
+  src: url('../fonts_and_logos/font/fontello.woff2') format('woff2');
+  src: url('../fonts_and_logos/font/fontello.svg') format('svg');
+  src: url('../fonts_and_logos/font/fontello.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #info-text h2 {
   font-family: 'cursive';
 }
 
 body h1, h2:not(.about-us-item h2) {
-  font-family: 'regular'
+  font-family: 'actual'
 }
