@@ -21,6 +21,10 @@
   width: 100%;
   z-index: 9999;
 
+  &.fixed {
+    position: fixed;
+    top: 0;
+  }
 
 // Mobile view
   .nav-options {
@@ -53,6 +57,12 @@
     padding-right: $centered-navigation-submenu-padding;
     text-decoration: none;
     text-transform: uppercase;
+
+    img {
+      height: 29px;
+      width: 29px;
+      margin: 0px 0px -7px 0px;
+    }
 
     @include media ($horizontal-bar-mode) {
       display: none;

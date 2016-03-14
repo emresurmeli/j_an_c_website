@@ -13,6 +13,15 @@ $(document).ready(function() {
     });
   });
 
+  $(window).bind('scroll', function() {
+    if ($(window).scrollTop() > 10) {
+      $('.centered-navigation').addClass('fixed');
+    }
+    else {
+      $('.centered-navigation').removeClass('fixed');
+    }
+  });
+
   // Smooth scrolling
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -28,12 +37,13 @@ $(document).ready(function() {
   });
 
   // Google maps
-  var bittersMap = (function () {
+  var Map = (function () {
     var butterMilkCord = new google.maps.LatLng(41.663407, -73.964074),
         holidayInnCord = new google.maps.LatLng(41.677393, -73.927240),
         mapCenter = new google.maps.LatLng(41.67000, -73.94000),
         mapCanvas = document.getElementById('map_canvas'),
         mapOptions = {
+          key: 'AIzaSyA6HIbVDaYOKm9c-vJMHfXoNhLt_99XbuU',
           center: mapCenter,
           zoom: 12,
           scrollwheel: true,
@@ -88,8 +98,8 @@ $(document).ready(function() {
           elementType: 'geometry',
           stylers: [
             { hue: '#ffff00' },
-            { saturation: 30 },
-            { lightness: 10}
+            { saturation: 10 },
+            { lightness: 100}
           ]}
         ]);
 
@@ -105,5 +115,5 @@ $(document).ready(function() {
     };
   }());
 
-  bittersMap.init();
+  Map.init();
 });
