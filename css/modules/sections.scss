@@ -144,7 +144,7 @@ section {
   -ms-flex-pack: center;
   background-color: #FFFFFF;
   padding: 1em;
-  max-width: 45%
+  max-width: 100%
 
 }
 
@@ -152,9 +152,9 @@ section {
   text-align: center;
 }
 
-@media only screen and (max-width: 50em) {
-  .program-infos {
-    max-width: 69%
+.program-info {
+  h3 {
+    margin: 20px 0px -0.1em;
   }
 }
 
@@ -171,7 +171,7 @@ section {
   -moz-align-items: center;
   -ms-align-items: center;
   -o-align-items: center;
-  align-items: center;
+  align-items: stretch;
   -ms-flex-align: center;
   -webkit-box-lines: multiple;
   -moz-box-lines: multiple;
@@ -194,6 +194,7 @@ section {
   -ms-flex-pack: center;
   background-color: #FFFFFF;
   padding: 1em;
+  max-width: 98%;
 }
 
 .transportation {
