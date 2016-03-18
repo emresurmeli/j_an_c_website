@@ -633,6 +633,8 @@ section {
 @media only screen and (max-width: 50em) {
   section h1 {
     font-size: 35px; }
+    section h1#loc_and_acc {
+      font-size: 22px; }
   section h2 {
     font-size: 25px; }
 
